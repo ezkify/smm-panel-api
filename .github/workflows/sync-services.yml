@@ -1,0 +1,31 @@
+name: sync-services
+
+on:
+  schedule:
+    - cron: "0 3 * * 1" # every Monday
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sync service catalog
+        run: |
+          pip install requests >/dev/null
+          python3 tools/sync_services.py --key "${{ secrets.EZKIFY_API_KEY }}" || echo "SYNC_SKIPPED"
+      - name: Commit if changed
+        run: |
+          if git diff --quiet docs/services.json; then
+            echo "no changes"
+          else
+            git config user.name "Ezkify Global Bot"
+            git config user.email "176233111+ezkify@users.noreply.github.com"
+            git add docs/services.json
+            git commit -m "chore: sync service catalog $(date +%F)"
+            git push
+          fi
