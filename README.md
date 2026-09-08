@@ -1,5 +1,10 @@
 # Ezkify Global SMM Panel API
 
+![GitHub Repo stars](https://img.shields.io/github/stars/ezkify/smm-panel-api?style=social)
+![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Operational-brightgreen)
+[![CI](https://github.com/ezkify/smm-panel-api/actions/workflows/ci.yml/badge.svg)](https://github.com/ezkify/smm-panel-api/actions/workflows/ci.yml)
+
 **Premium AI-Safe social media marketing API.** High-retention growth for Instagram, TikTok, YouTube, X and 1,000+ services — trusted by 50,000+ agencies. White-label reseller ready.
 
 **Language:** [PHP](php/) · [Python](python/) · [Node.js](node/) · curl below
