@@ -1,0 +1,20 @@
+{
+  "name": "@ezkify/smm-panel-api",
+  "version": "1.0.0",
+  "description": "Official Node.js client for Ezkify Global SMM Panel API. Instagram, TikTok, YouTube growth services with high-retention, AI-safe delivery. 1,000+ services.",
+  "main": "index.js",
+  "keywords": [
+    "smm",
+    "smm-panel",
+    "instagram-api",
+    "tiktok-api",
+    "youtube-api",
+    "smm-reseller",
+    "social-media-marketing"
+  ],
+  "license": "MIT",
+  "homepage": "https://ezkify.com",
+  "dependencies": {
+    "axios": "^1.0.0"
+  }
+}
