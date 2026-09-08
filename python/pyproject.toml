@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ezkify-smm-panel-api"
+version = "1.0.0"
+description = "Official Python client for Ezkify Global SMM Panel API. Instagram, TikTok, YouTube growth services with high-retention, AI-safe delivery. 1,000+ services, white-label reseller ready."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ezkify Global", email = "ezkify@proton.me" }]
+keywords = [
+    "smm", "smm-panel", "smm-api", "social-media-marketing",
+    "instagram-api", "tiktok-api", "youtube-api", "reseller-api",
+    "instagram-followers", "youtube-views", "smm-reseller",
+]
+dependencies = ["requests>=2.25"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://ezkify.com"
+Repository = "https://github.com/ezkify/smm-panel-api"
+
+[tool.setuptools]
+py-modules = ["ezkify_smm"]
